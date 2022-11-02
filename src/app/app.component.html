@@ -1,0 +1,10 @@
+<hello name="{{ name }}"></hello>
+<div>
+  <input type="text" #input1 /><br/>
+  <input type="text" #input2 /><br/>
+  <input type="text" [(ngModel)]='input3' /><br/>
+  <button (click)="passData(input2.value)" font-size="20">Click Me </button>
+</div>
+<div>
+<child [data1]='input1.value'> </child>
+</div>
